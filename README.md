@@ -21,7 +21,7 @@
 
 Volto-cotrolpanel presents an overview of all frontend and backend packages used and their versions
 
-![Volto Control Panel](https://raw.githubusercontent.com/eea/volto-controlpanel/version-overview/docs/volto-controlpanel.gif)
+![Volto Control Panel](https://raw.githubusercontent.com/eea/volto-controlpanel/master/docs/volto-controlpanel.gif)
 
 ## Getting started
 
