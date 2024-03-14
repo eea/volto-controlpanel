@@ -6,7 +6,7 @@ pipeline {
   environment {
     GIT_NAME = "volto-controlpanel"
     NAMESPACE = "@eeacms"
-    SONARQUBE_TAGS = "volto.eea.europa.eu,climate-adapt.eea.europa.eu,land.copernicus.eu"
+    SONARQUBE_TAGS = "volto.eea.europa.eu,climate-adapt.eea.europa.eu,land.copernicus.eu,water.europa.eu-freshwater"
     DEPENDENCIES = ""
     BACKEND_PROFILES = "eea.kitkat:testing"
     BACKEND_ADDONS = ""
