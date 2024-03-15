@@ -26,6 +26,7 @@ export const updateSystemInfo = (config) => {
     method: 'PATCH',
     body: JSON.stringify({
       'eea.kitkat.interfaces.IEEAVersionsFrontend.version': version,
+      'eea.api.controlpanel.interfaces.IEEAVersionsFrontend.version': version,
     }),
     headers: {
       Accept: 'application/json',
