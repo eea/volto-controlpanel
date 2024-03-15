@@ -15,13 +15,35 @@
 [![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-develop)
 
 
-[Volto](https://github.com/plone/volto) add-on
+[Volto](https://github.com/plone/volto) add-on that enhance Version Overview information in Control Panel:
+* Frontend Version
+  * When it was updated and from which version
+  * Link to Frontend changelog
+  * Volto version and the list of all installed Volto add-ons
+* Backend Version
+  * When it was updated and from which version
+  * Link to Backend changelog
+  * List of all Python eggs installed on Backend
+
+## Requirements
+
+This addon requires a server-side package to be installed.
+* [eea.api.controlpanel](https://github.com/eea/eea.api.controlpanel?)
 
 ## Features
 
-Volto-cotrolpanel presents an overview of all frontend and backend packages used and their versions
-
 ![Volto Control Panel](https://raw.githubusercontent.com/eea/volto-controlpanel/master/docs/volto-controlpanel.gif)
+
+## Environment Variables
+
+You can control the information displayed in Volto Control Panel via the following environment variables:
+
+* `RAZZLE_CHANGELOG_PREFIX` - Default: `https://github.com/eea` - Used to compose the links to CHANGELOG
+* `RAZZLE_CHANGELOG_SUFFIX` - Default: `releases` - Used to compose the links to CHANGELOG
+* `RAZZLE_FRONTEND_VERSION` - Default: `<packageJson.version>` - Frontend version
+* `RAZZLE_FRONTEND_NAME`    - Default: `<packageJson.name>` - Used to compose the links to CHANGELOG
+* `RAZZLE_BACKEND_VERSION`  - Default: `''` - Backend version
+* `RAZZLE_BACKEND_NAME`     - Default: `plone-backend` - Used to compose the backend link to CHANGELOG
 
 ## Getting started
 
