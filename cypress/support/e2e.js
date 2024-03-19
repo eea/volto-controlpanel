@@ -42,6 +42,23 @@ export const slateBeforeEach = (contentType = 'Document') => {
   cy.navigate('/cypress/my-page/edit');
 };
 
+export const slateBeforeEachControlpanel = (contentType = 'Document') => {
+  cy.autologin();
+  cy.createContent({
+    contentType: 'Document',
+    contentId: 'cypress',
+    contentTitle: 'Cypress',
+  });
+  cy.createContent({
+    contentType: contentType,
+    contentId: 'my-page',
+    contentTitle: 'My Page',
+    path: 'cypress',
+  });
+
+  cy.visit('/controlpanel');
+};
+
 export const slateAfterEach = () => {
   cy.autologin();
   cy.removeContent('cypress');

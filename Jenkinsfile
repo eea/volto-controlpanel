@@ -12,7 +12,7 @@ pipeline {
     SONARQUBE_TAGS = "volto.eea.europa.eu,climate-adapt.eea.europa.eu,land.copernicus.eu,water.europa.eu-freshwater,demo-www.eea.europa.eu,www.eea.europa.eu-en"
     DEPENDENCIES = ""
     BACKEND_PROFILES = "eea.kitkat:testing"
-    BACKEND_ADDONS = ""
+    BACKEND_ADDONS = "eea.api.controlpanel"
     VOLTO = "17"
     VOLTO16_BREAKING_CHANGES = "no"
     IMAGE_NAME = BUILD_TAG.toLowerCase()
