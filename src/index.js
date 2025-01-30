@@ -2,16 +2,6 @@ import packageJson from '../../../../package.json';
 import { updateSystemInfo } from '@eeacms/volto-controlpanel/system';
 
 const applyConfig = (config) => {
-  if (process.env.NODE_ENV !== 'production') {
-    // Enable description block for cypress
-    config.blocks.blocksConfig.description.restricted = false;
-  }
-
-  // Disable non-GDPR compliant blocks
-  config.blocks.blocksConfig.video.restricted = true;
-  config.blocks.blocksConfig.maps.restricted = true;
-  config.blocks.blocksConfig.html.restricted = true;
-
   // Changelogs
   config.settings.changelogUrlPrefix =
     config.settings.changelogPrefix || __SERVER__
