@@ -3,16 +3,16 @@
 [![Releases](https://img.shields.io/github/v/release/eea/volto-controlpanel)](https://github.com/eea/volto-controlpanel/releases)
 
 [![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto-addons%2Fvolto-controlpanel%2Fmaster&subject=master)](https://ci.eionet.europa.eu/view/Github/job/volto-addons/job/volto-controlpanel/job/master/display/redirect)
-[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-master&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-master)
-[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-master&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-master)
-[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-master&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-master)
-[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-master&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-master)
+[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel)
+[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel)
+[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel)
+[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel)
 
 [![Pipeline](https://ci.eionet.europa.eu/buildStatus/icon?job=volto-addons%2Fvolto-controlpanel%2Fdevelop&subject=develop)](https://ci.eionet.europa.eu/view/Github/job/volto-addons/job/volto-controlpanel/job/develop/display/redirect)
-[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-develop&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-develop)
-[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-develop&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-develop)
-[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-develop&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-develop)
-[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel-develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel-develop)
+[![Lines of Code](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel&branch=develop&metric=ncloc)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel&branch=develop)
+[![Coverage](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel&branch=develop&metric=coverage)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel&branch=develop)
+[![Bugs](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel&branch=develop&metric=bugs)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel&branch=develop)
+[![Duplicated Lines (%)](https://sonarqube.eea.europa.eu/api/project_badges/measure?project=volto-controlpanel&branch=develop&metric=duplicated_lines_density)](https://sonarqube.eea.europa.eu/dashboard?id=volto-controlpanel&branch=develop)
 
 
 [Volto](https://github.com/plone/volto) add-on that enhance Version Overview information in Control Panel:
