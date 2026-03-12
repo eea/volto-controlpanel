@@ -1,12 +1,12 @@
 /* eslint no-console: ["error", { allow: ["warn", "log"] }] */
 export const updateSystemInfo = (config) => {
-  let fetch = require('node-fetch');
   const internalApi =
     config.settings.internalApiPath || config.settings.devProxyToApiPath;
   const version = config.settings.frontendVersion;
+  const fetchApi = typeof fetch === 'function' ? fetch : undefined;
 
   // Nothing to do
-  if (!version || !internalApi) {
+  if (!version || !internalApi || !fetchApi) {
     return config;
   }
 
@@ -22,7 +22,7 @@ export const updateSystemInfo = (config) => {
 
   // Persist FRONTEND_VERSION on backend registry
   const url = `${internalApi}/@system`;
-  fetch(url, {
+  fetchApi(url, {
     method: 'PATCH',
     body: JSON.stringify({
       'eea.kitkat.interfaces.IEEAVersionsFrontend.version': version,
