@@ -21,9 +21,7 @@ const applyConfig = (config) => {
     '';
 
   config.settings.frontendName =
-    config.settings.frontendName ||
-    runtimeEnv?.RAZZLE_FRONTEND_NAME ||
-    '';
+    config.settings.frontendName || runtimeEnv?.RAZZLE_FRONTEND_NAME || '';
 
   config.settings.backendVersion =
     config.settings.backendVersion || runtimeEnv?.RAZZLE_BACKEND_VERSION || '';
