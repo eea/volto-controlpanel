@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import VersionOverview from './VersionOverview';
 import config from '@plone/volto/registry';
-import '@testing-library/jest-dom/extend-expect';
+import '@testing-library/jest-dom';
 
 jest.mock('@plone/volto/helpers/Utils/Date', () => ({
   formatDate: jest.fn(() => 'formatted date'),
