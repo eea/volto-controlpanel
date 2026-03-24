@@ -1,40 +1,38 @@
-import packageJson from '../../../../package.json';
 import { updateSystemInfo } from '@eeacms/volto-controlpanel/system';
 
 const applyConfig = (config) => {
+  const isServer = typeof __SERVER__ !== 'undefined' && __SERVER__;
+  const runtimeEnv = isServer ? process.env : window.env;
+
   // Changelogs
   config.settings.changelogUrlPrefix =
-    config.settings.changelogPrefix || __SERVER__
-      ? process.env?.RAZZLE_CHANGELOG_PREFIX
-      : window.env?.RAZZLE_CHANGELOG_PREFIX || 'https://github.com/eea';
+    config.settings.changelogPrefix ||
+    runtimeEnv?.RAZZLE_CHANGELOG_PREFIX ||
+    'https://github.com/eea';
 
   config.settings.changelogUrlSuffix =
-    config.settings.changelogSuffix || __SERVER__
-      ? process.env?.RAZZLE_CHANGELOG_SUFFIX
-      : window.env?.RAZZLE_CHANGELOG_SUFFIX || 'releases';
+    config.settings.changelogSuffix ||
+    runtimeEnv?.RAZZLE_CHANGELOG_SUFFIX ||
+    'releases';
 
   config.settings.frontendVersion =
-    config.settings.frontendVersion || __SERVER__
-      ? process.env?.RAZZLE_FRONTEND_VERSION
-      : window.env?.RAZZLE_FRONTEND_VERSION || packageJson.version;
+    config.settings.frontendVersion ||
+    runtimeEnv?.RAZZLE_FRONTEND_VERSION ||
+    '';
 
   config.settings.frontendName =
-    config.settings.frontendName || __SERVER__
-      ? process.env?.RAZZLE_FRONTEND_NAME
-      : window.env?.RAZZLE_FRONTEND_NAME || packageJson.name;
+    config.settings.frontendName || runtimeEnv?.RAZZLE_FRONTEND_NAME || '';
 
   config.settings.backendVersion =
-    config.settings.backendVersion || __SERVER__
-      ? process.env?.RAZZLE_BACKEND_VERSION
-      : window.env?.RAZZLE_BACKEND_VERSION || '';
+    config.settings.backendVersion || runtimeEnv?.RAZZLE_BACKEND_VERSION || '';
 
   config.settings.backendName =
-    config.settings.backendName || __SERVER__
-      ? process.env?.RAZZLE_BACKEND_NAME
-      : window.env?.RAZZLE_BACKEND_NAME || 'plone-backend';
+    config.settings.backendName ||
+    runtimeEnv?.RAZZLE_BACKEND_NAME ||
+    'plone-backend';
 
   // Persist FRONTEND_VERSION on backend registry
-  if (__SERVER__) {
+  if (isServer) {
     updateSystemInfo(config);
   }
 
