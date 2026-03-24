@@ -1,4 +1,3 @@
-import packageJson from '../../../../package.json';
 import { updateSystemInfo } from '@eeacms/volto-controlpanel/system';
 
 const applyConfig = (config) => {
@@ -19,12 +18,12 @@ const applyConfig = (config) => {
   config.settings.frontendVersion =
     config.settings.frontendVersion ||
     runtimeEnv?.RAZZLE_FRONTEND_VERSION ||
-    packageJson.version;
+    '';
 
   config.settings.frontendName =
     config.settings.frontendName ||
     runtimeEnv?.RAZZLE_FRONTEND_NAME ||
-    packageJson.name;
+    '';
 
   config.settings.backendVersion =
     config.settings.backendVersion || runtimeEnv?.RAZZLE_BACKEND_VERSION || '';
