@@ -111,7 +111,7 @@ const VersionOverview = ({
             <li>Python {python_version}</li>
             <li>PIL {pil_version}</li>
             {Object.keys(eggs).map((k) => (
-              <li>
+              <li key={k}>
                 {k} {eggs[k]}
               </li>
             ))}
