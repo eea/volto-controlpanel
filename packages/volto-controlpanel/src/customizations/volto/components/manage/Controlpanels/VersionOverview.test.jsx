@@ -1,11 +1,12 @@
+import { vi } from 'vitest';
 import React from 'react';
 import { render } from '@testing-library/react';
 import VersionOverview from './VersionOverview';
 import config from '@plone/volto/registry';
 import '@testing-library/jest-dom';
 
-jest.mock('@plone/volto/helpers/Utils/Date', () => ({
-  formatDate: jest.fn(() => 'formatted date'),
+vi.mock('@plone/volto/helpers/Utils/Date', () => ({
+  formatDate: vi.fn(() => 'formatted date'),
 }));
 
 config.settings.addonsInfo = [
