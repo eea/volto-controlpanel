@@ -1,0 +1,7 @@
+{
+  "title": "Controlpanel",
+  "frontend_addon_name": "volto-controlpanel",
+  "description": "@eeacms/volto-controlpanel: Volto add-on",
+  "volto_version": "19.3.0",
+  "__template__": "frontend_addon"
+}
