@@ -36,6 +36,18 @@ You can control the information displayed in Volto Control Panel via the followi
 
 ## Upgrade Guide
 
+### Upgrading to 3.x
+
+> This version requires `Volto 18` or `Volto 19` and Node.js 22.
+
+The add-on keeps the same API and the same settings keys, so upgrading from 2.x on Volto 18 needs no code changes. The release adds Volto 19 support and moves the repository to the Volto 19 layout, where the published package lives in `packages/volto-controlpanel`.
+
+#### Breaking changes
+
+- **Node.js 22 or newer is required** (`engines.node >= 22`), 2.x declared no engine.
+- **React 18 is required.** The package declares `react` and `react-dom` as `^18.2.0` peers, 2.x declared no peers.
+- **The package no longer ships the Jest setup.** `jest-addon.config.js` and `jest.setup.js` were removed in favour of Vitest, so a Volto 18 project that still runs the Jest harness has to keep its own copy.
+
 ### Upgrading to 2.x
 
 > This version requires `Volto >= 17` and adds full support for `Volto 18+` (Cookieplone). It removes the hard-coded dependency on the project's root `package.json` and drops the `node-fetch` server-side dependency in favor of Node's built-in `fetch`.
